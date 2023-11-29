@@ -88,6 +88,13 @@ h3 {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+.header .header__menu input {
+	position: absolute;
+	z-index: 8;
+	opacity: 0;
+	transform: scale(1.5);
+}
+
 .header .header__menu input,
 .header .header__menu .header__icon-open,
 .header .header__menu .header__icon-close {
@@ -95,20 +102,21 @@ h3 {
 	top: 30px;
 	right: 30px;
 }
-.header .header__menu input {
-	display: none;
-}
+
 .header .header__menu .header__icon-open,
 .header .header__menu .header__icon-close {
 	display: block;
 	width: 20px;
 	height: 20px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .header .header__menu .header__icon-open {
-	background-color: red;
+	background-image: url(../img/ico-menu.svg);
 }
 .header .header__menu .header__icon-close {
-	background-color: blue;
+	background-image: url(../img/ico-close.svg);
 }
 .header .header__menu ul {
 	display: flex;
@@ -127,13 +135,16 @@ h3 {
 	text-decoration: underline;
 }
 
+@media (min-width: 768px) {
+	.header .header__menu input,
+	.header .header__menu .header__icon-open,
+	.header .header__menu .header__icon-close {
+		display: none;
+	}
+}
 @media screen and (max-width: 767px) {
 	.header .header__menu input {
 		display: block;
-		position: absolute;
-		z-index: 8;
-		opacity: 0;
-		transform: scale(1.5);
 	}
 
 	.header .header__menu input ~ .header__icon-close,
@@ -147,7 +158,7 @@ h3 {
 		visibility: hidden;
 		flex-direction: column;
 		justify-content: space-evenly;
-		background: #0000ec;
+		background: black;
 		min-height: 224px;
 		width: 100%;
 		position: absolute;
@@ -166,6 +177,7 @@ h3 {
 	}
 }
 
+/* Footer oculto mientras trabajo header*/
 footer {
 	display: none;
 }
