@@ -36,68 +36,110 @@
 
   <!-- Main -->
   <main id="top">
-    <section id="backgroundA">
-      <h1>This is <span>Daft Punk</span></h1>
+
+    <!-- Intro -->
+    <section id="backgroundA" class="intro bg--fixed">
+      <h1 class="intro__title">This is <span>Daft Punk</span></h1>
     </section>
-    <section id="intro">
-      <div class="column">
-        <h2>Daft Punk</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis unde esse ipsam error, quisquam
-          provident, repellat ad dignissimos enim, sit possimus adipisci natus maxime doloremque nulla? Quo
-          architecto aperiam dignissimos.</p>
+
+    <!-- Texto 1 -->
+    <section class="section">
+      <div class="container">
+        <div class="row pt-5 pb-5">
+          <div class="col-md-6 "></div>
+          <div class="col-md-6 pt-5 pb-5">
+            <h2 class="section__title">Daft Punk</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis unde esse ipsam error, quisquam
+              provident, repellat ad dignissimos enim, sit possimus adipisci natus maxime doloremque nulla? Quo
+              architecto aperiam dignissimos.</p>
+          </div>
+        </div>
       </div>
     </section>
-    <section id="backgroundB">
+
+    <!-- fondo fijo B -->
+    <section id="backgroundB" class="section section--flex bg--fixed">
     </section>
-    <section id="miniBio">
-      <div class="column">
-        <h2>Daft Punk</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis unde esse ipsam error, quisquam
-          provident, repellat ad dignissimos enim, sit possimus adipisci natus maxime doloremque nulla? Quo
-          architecto aperiam dignissimos.</p>
+
+    <!-- Texto 2 -->
+    <section class="section">
+      <div class="container">
+        <div class="row pt-5 pb-5">
+          <div class="col-md-6 pt-5 pb-5">
+            <h2 class="section__title">Daft Punk</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis unde esse ipsam error, quisquam
+              provident, repellat ad dignissimos enim, sit possimus adipisci natus maxime doloremque nulla? Quo
+              architecto aperiam dignissimos.</p>
+          </div>
+          <div class="col-md-6 "></div>
+        </div>
       </div>
     </section>
-    <section id="backgroundC">
+
+    <!-- fondo fijo C -->
+    <section id="backgroundC" class="section section--flex bg--fixed">
     </section>
-    <section id="video">
-      <iframe frameborder="0" allowfullscreen="1"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        title="Daft Punk - Memory Tapes - Episode 5 - Todd Edwards (Official Video)" width="100%" height="400"
-        src="https://www.youtube.com/embed/0qpD-w7-DAE?controls=1&amp;iv_load_policy=3&amp;loop=0&amp;rel=0&amp;autoplay=0&amp;mute=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.daftpunk.com&amp;widgetid=3"
-        id="widget4" data-gtm-yt-inspected-8="true"></iframe>
+
+    <!-- video -->
+    <section class="section section--black">
+      <div class="container">
+        <div class="row pt-5 pb-5">
+          <iframe frameborder="0" allowfullscreen="1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            title="Daft Punk - Memory Tapes - Episode 5 - Todd Edwards (Official Video)" width="100%" height="400"
+            src="https://www.youtube.com/embed/0qpD-w7-DAE?controls=1&amp;iv_load_policy=3&amp;loop=0&amp;rel=0&amp;autoplay=0&amp;mute=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.daftpunk.com&amp;widgetid=3"
+            id="widget4" data-gtm-yt-inspected-8="true"></iframe>
+        </div>
+      </div>
     </section>
-    <section id="form">
-      <h2>Newsletter</h2>
-      <form action="" method="" enctype="text/plain">
-        <label for="name" required>Nombre</label>
-        <input type="text" id="fname" name="name" placeholder="Nombre">
-        <label for="mail" required>Email</label>
-        <input type="email" id="mail" name="mail" placeholder="Email">
-        <input type="checkbox" id="accept" name="accept">
-        <label for="accept">Acepto recibir Newsletters</label>
-        <input type="submit" value="Enviar">
-      </form>
+
+    <!-- formulario -->
+    <section class="section">
+      <div class="container">
+        <div class="row pt-5 pb-5">
+          <div class="col">
+            <h2 class="section__title--form">Newsletter</h2>
+            <form class="section__form" action="" method="" enctype="text/plain">
+              <label for="name" required>Nombre</label>
+              <input type="text" id="fname" name="name" placeholder="Nombre">
+              <label for="mail" required>Email</label>
+              <input type="email" id="mail" name="mail" placeholder="Email">
+              <input type="checkbox" id="accept" name="accept">
+              <label for="accept">Acepto recibir Newsletters</label>
+              <input type="submit" value="Enviar">
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
+
   </main>
+
   <!-- Footer -->
-  <footer>
-    <a href="#top" class="footerTop"><img src="./img/top.svg" alt="Volver arriba"></a>
-    <img class="footerLogo" src="./img/logo.svg" alt="Logo Daft Punk">
-    <ul>
-      <li><a href="https://www.facebook.com/" target="_blank" title="Facebook"><img src="./img/fb.svg"
-            alt="Facebook"></a></li>
-      <li><a href="https://www.instagram.com/" target="_blank" title="Instagram"><img src="./img/ig.svg"
-            alt="Instagram"></a></li>
-      <li><a href="https://twitter.com/home?lang=es" target="_blank" title="Twitter"><img src="./img/tw.svg"
-            alt="Twitter"></a></li>
-      <li><a href="https://www.tiktok.com/es/" target="_blank" title="TikTok"><img src="./img/tt.svg" alt="TikTok"></a>
-      </li>
-      <li><a href="https://www.youtube.com/" target="_blank" title="Youtube"><img src="./img/yt.svg" alt="Youtube"></a>
-      </li>
-      <li><a href="https://open.spotify.com/intl-es" target="_blank" title="Spotify"><img src="./img/sp.svg"
-            alt="Spotify"></a></li>
-    </ul>
-    <p>Copyright 2023</p>
+  <footer class="footer container-fluid">
+    <div class="row pt-5 pb-5">
+      <div class="col">
+        <a href="#top" class="footer__top"><img src="./img/top.svg" alt="Volver arriba"></a>
+        <img class="footer__logo" src="./img/logo.svg" alt="Logo Daft Punk">
+        <ul class="footer__menu">
+          <li><a href="https://www.facebook.com/" target="_blank" title="Facebook"><img src="./img/fb.svg"
+                alt="Facebook"></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" title="Instagram"><img src="./img/ig.svg"
+                alt="Instagram"></a></li>
+          <li><a href="https://twitter.com/home?lang=es" target="_blank" title="Twitter"><img src="./img/tw.svg"
+                alt="Twitter"></a></li>
+          <li><a href="https://www.tiktok.com/es/" target="_blank" title="TikTok"><img src="./img/tt.svg"
+                alt="TikTok"></a>
+          </li>
+          <li><a href="https://www.youtube.com/" target="_blank" title="Youtube"><img src="./img/yt.svg"
+                alt="Youtube"></a>
+          </li>
+          <li><a href="https://open.spotify.com/intl-es" target="_blank" title="Spotify"><img src="./img/sp.svg"
+                alt="Spotify"></a></li>
+        </ul>
+        <p class="footer__copy">Copyright 2023</p>
+      </div>
+    </div>
   </footer>
 
 
