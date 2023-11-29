@@ -215,7 +215,9 @@ main {
 }
 .section .section__title,
 .section .section__title--form,
-.section .section__title--play {
+.section .section__title--play,
+.section .section__title--bio,
+.section .section__title--duo {
 	font-size: 4vw;
 	font-weight: 300;
 	line-height: 1.3;
@@ -225,15 +227,18 @@ main {
 .section .section__title--play {
 	text-align: center;
 }
-.section .section__title--bio {
-	font-size: 4vw;
-	font-weight: 300;
+.section .section__title--bio,
+.section .section__title--duo {
+	margin-bottom: 0;
 }
 .section .section__title--bio span {
 	font-weight: 900;
 	font-size: 18vw;
 	line-height: 1;
 	display: block;
+}
+.section .section__title--duo {
+	margin-top: 20px;
 }
 .section .section__form {
 	width: 350px;
@@ -298,10 +303,19 @@ main {
 #bioIntro {
 	background-image: url(../img/bioIntro.jpg);
 }
+/* fondo fixed Duo */
+#duoIntro {
+	background-image: url(../img/duoIntro.jpg);
+}
 /* fondo fixed Interestellar */
 #interIntro {
 	background-image: url(../img/interestellar.avif);
 }
+/* fondo fixed discografia */
+#discoIntro {
+	background-image: url(../img/discoIntro.jpg);
+}
+
 /* pqara rows */
 .row--reverse {
 	display: flex;
@@ -363,8 +377,6 @@ main {
 	.header .header__menu ul li {
 		margin: 10px;
 	}
-	.header .header__menu ul .header__link:after {
-	}
 
 	/* Footer */
 	.footer .footer__top {
@@ -390,7 +402,8 @@ main {
 	.section .section__title,
 	.section .section__title--form,
 	.section .section__title--bio,
-	.section .section__title--play {
+	.section .section__title--play,
+	.section .section__title--duo {
 		font-size: 32px;
 	}
 
